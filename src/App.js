@@ -1,15 +1,14 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
 import HomeView from './Features/Home/homeView';
 import Navigation from './Features/Navigation/navigation';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Navbar selectedProducts={selectedProducts} />
+      <Route path="/navigation" element={<Navigation />} />
       <Routes>
         <Route path="/" element={<HomeView />} />
-        <Route path="/navigation" element={<Navigation />} />
         <Route />
       </Routes>
     </div>
