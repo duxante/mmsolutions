@@ -1,7 +1,11 @@
+import { Link } from 'react-router-dom';
+
 const HomeView = () => {
   return (
     <>
-      <p>Home View</p>
+      <Link to="/">
+        <p>Home View 123</p>
+      </Link>
     </>
   );
 };
