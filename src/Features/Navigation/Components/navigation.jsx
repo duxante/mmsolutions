@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import * as React from 'react';
-import { MmsLogo } from '../../../Assets';
+import { MmsLogo } from '../../../assets';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
@@ -18,7 +18,7 @@ import {
   Twitter,
 } from '@mui/icons-material';
 
-const pages = ['Home', 'About', 'Services', 'News', 'Contact'];
+const pages = ['Home', 'About', 'Servic es', 'News', 'Contact'];
 
 const Navigation = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
