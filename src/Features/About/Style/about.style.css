@@ -1,0 +1,37 @@
+.aboutHolder{
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display';
+}
+
+.aboutMain{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageAndShortText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.imageAndShortText h2{
+    text-align:start;
+    max-width: 750px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 1.5;
+    color: black;
+    font-weight: 400;
+    font-family: "EB Garamond", serif;
+    margin: 0;
+}

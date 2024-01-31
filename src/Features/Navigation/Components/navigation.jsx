@@ -18,7 +18,7 @@ import {
   Twitter,
 } from '@mui/icons-material';
 
-const pages = ['Home', 'About', 'Servic es', 'News', 'Contact'];
+const pages = ['Home', 'About', 'Services', 'News', 'Contact'];
 
 const Navigation = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

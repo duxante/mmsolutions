@@ -11,3 +11,28 @@ body{
     width: 99%;
     margin-top: 0;
 }
+
+.videoPlay{
+    max-width: 80px;
+    width: 100%;
+    background: #ffa62b;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+    margin-top: 1rem;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 #ffa62b;
+	}
+
+	0% {
+		box-shadow: 0 0 0 1px #ffcf8b;
+	}
+
+	100% {
+		box-shadow: 0 0 0 25px #faf8f5;
+	}
+}
