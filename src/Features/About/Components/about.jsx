@@ -1,4 +1,5 @@
-import { VideoPlay } from '../../../assets';
+import { AboutImage, VideoPlay } from '../../../assets';
+import MainButton from '../../../common/mainButton/mainButton';
 import '../style/about.style.css';
 
 const About = () => {
@@ -13,19 +14,27 @@ const About = () => {
           </h2>
         </div>
         <div className="biggerImageAndLongerText">
-          <img src="" alt="" />
+          <AboutImage />
           <div className="justText">
-            <h1>Mellisa Berlusconi A Writer & Author of the Book</h1>
+            <h1>
+              Marija Milićević Engineer, Scientist & Author of Notable Columns
+            </h1>
             <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of the Semantics, a
-              large language ocean. A small river named Duden flows by their
-              place and supplies it with the necessary regelialia. It is a
-              paradisematic country, in which roasted parts of sentences fly
-              into your mouth.
+              Dive into the intellectual realm guided by your consummate
+              scientist and seasoned consultant. A master of thought and
+              expression, someone who crafts captivating narratives in
+              prestigious newspapers, seamlessly blending profound insights with
+              real-world applicability.
             </p>
-            <button>See More Works</button>
+            <p className="bottomText">
+              Explore a world where each cooperation is a journey, meticulously
+              designed to engage your mind and spark curiosity. Embark on a
+              voyage of discovery with your safe companion, where expertise
+              converges with eloquence, leaving an indelible mark on the
+              landscape of thought.
+            </p>
+
+            <MainButton buttonText="See More Works" />
           </div>
         </div>
       </div>
