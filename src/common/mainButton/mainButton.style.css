@@ -1,0 +1,25 @@
+.mMSolutionsButton{
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px 15px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: "Poppins", Arial, sans-serif;
+    border: 2px solid transparent;
+    border-color: #ffa62b;    
+    /* color: rgba(0, 0, 0, 0.653); */
+    color: black;
+    background: #ffa62b;
+    font-weight: 500;
+    transition: background-color .2s ease-in-out;
+    margin-top: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+.mMSolutionsButton:hover{
+    background-color: #ffb245;
+    border-color: #ffb245;
+    }
