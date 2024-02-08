@@ -10,6 +10,10 @@ import onlineMeetings from './onlineMeetings.png';
 import process from './process.png';
 import strategicGuidance from './strategicGuidance.png';
 import transformativeInsights from './transformativeInsights.png';
+import ideas from './ideas.png';
+import clients from './clients.png';
+import readers from './readers.png';
+import experience from './experience.png';
 
 const MmsLogo = () => {
   return <img className="mmsLogo" src={mms_logo} alt="mms logo" />;
@@ -91,7 +95,33 @@ const TransforamtiveInsights = () => {
   );
 };
 
+const Readers = () => {
+  return <img className="smallImages" src={readers} alt="reader" />;
+};
+
+const Experience = () => {
+  return <img className="smallImages" src={experience} alt="briefcase" />;
+};
+
+const Ideas = () => {
+  return <img className="smallImages" src={ideas} alt="lightbulb on paper" />;
+};
+
+const Clients = () => {
+  return (
+    <img
+      className="smallImages"
+      src={clients}
+      alt="avatar of person in a circle arrow"
+    />
+  );
+};
+
 export {
+  Ideas,
+  Experience,
+  Clients,
+  Readers,
   MmsLogo,
   HomeViewImage,
   VideoPlay,
