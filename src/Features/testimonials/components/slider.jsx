@@ -1,24 +1,45 @@
 import React from 'react';
 import Carousel from 'react-material-ui-carousel';
 import Item from './item';
-import { StrategicGuidance, TransforamtiveInsights } from '../../../assets';
+import {
+  JaneSmith,
+  JosephineMcnammara,
+  Kathy,
+  MikeRuffalo,
+  TomHiddleStone,
+} from '../../../assets';
 
 const TestimonialsSlide = (props) => {
   let items = [
     {
-      img: <TransforamtiveInsights />,
-      name: 'Marko Markic',
-      description: 'Probably the most random thing you have ever seen!',
+      img: <JaneSmith />,
+      name: 'Jane Smith',
+      description:
+        '"Working with this consultant company felt like having a trusted ally in our business journey. Their down-to-earth genuine commitment to our success made the entire process not just professional but also a personal and enjoyable."',
     },
     {
-      img: <StrategicGuidance />,
-      name: 'Random Name #2',
-      description: 'Hello World!',
+      img: <MikeRuffalo />,
+      name: 'Mark Ruffalo',
+      description:
+        '"Their team not only brought expert insights but also a refreshing dose of enthusiasm. It is a partnership built on trust, delivering real, tangible results. We couldnt be happier with the journey and the outcomes."',
     },
     {
-      img: <StrategicGuidance />,
-      name: 'Random Name #2',
-      description: 'Hello World!',
+      img: <TomHiddleStone />,
+      name: 'Tom Hiddlestone',
+      description:
+        '"Partnering with this consultancy was our best decision ever. Their expertise, coupled with personalized guidance, has transformed our business trajectory. Grateful for the positive impact and continual support."',
+    },
+    {
+      img: <JosephineMcnammara />,
+      name: 'Josephine McNammara',
+      description:
+        '"Selecting this consultancy ranks as our best business decision. Their profound expertise, coupled with personalized guidance, has transformed our approach and elevated our outcomes. We value the genuine partnership built on trust."',
+    },
+    {
+      img: <Kathy />,
+      name: 'Kathy Pierce',
+      description:
+        '"Engaging with this consultancy has been a transformative journey. The personalized attention that made us feel genuinely heard, it is more than a consultancy; it is a force propelling our success."',
     },
   ];
 

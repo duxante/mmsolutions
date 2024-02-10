@@ -1,0 +1,19 @@
+.textBelowImage{
+    max-width: 600px;
+    width: 100%;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.nameBelowImage{
+    line-height: 1.5;
+    color: black;
+    font-weight: 400;
+    font-family: "EB Garamond", serif;
+    font-size: 40px;
+    margin: 10px auto;
+}

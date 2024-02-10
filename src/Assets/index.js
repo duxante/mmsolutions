@@ -14,6 +14,11 @@ import ideas from './ideas.png';
 import clients from './clients.png';
 import readers from './readers.png';
 import experience from './experience.png';
+import tomHiddleStone from './tomHiddlestone.png';
+import kathy from './kathy.png';
+import mikeRuffalo from './mikeRuffalo.png';
+import josephineMcnammara from './josephineMcnammara.png';
+import janeSmith from './janeSmith.png';
 
 const MmsLogo = () => {
   return <img className="mmsLogo" src={mms_logo} alt="mms logo" />;
@@ -117,6 +122,38 @@ const Clients = () => {
   );
 };
 
+const JosephineMcnammara = () => {
+  return (
+    <img
+      className="testimonialImages"
+      src={josephineMcnammara}
+      alt="business woman"
+    />
+  );
+};
+
+const Kathy = () => {
+  return <img className="testimonialImages" src={kathy} alt="business woman" />;
+};
+
+const JaneSmith = () => {
+  return (
+    <img className="testimonialmages" src={janeSmith} alt="business woman" />
+  );
+};
+
+const TomHiddleStone = () => {
+  return (
+    <img className="testiomnialImages" src={tomHiddleStone} alt="busines man" />
+  );
+};
+
+const MikeRuffalo = () => {
+  return (
+    <img className="testimonialImages" src={mikeRuffalo} alt="business man" />
+  );
+};
+
 export {
   Ideas,
   Experience,
@@ -134,4 +171,9 @@ export {
   Process,
   StrategicGuidance,
   TransforamtiveInsights,
+  MikeRuffalo,
+  TomHiddleStone,
+  Kathy,
+  JosephineMcnammara,
+  JaneSmith,
 };
