@@ -16,6 +16,7 @@ const Item = (props) => {
     >
       {props.item.img}
       <h2 className="nameBelowImage">{props.item.name}</h2>
+      <p className="workingTitle">{props.item.workingTitle}</p>
       <p className="textBelowImage">{props.item.description}</p>
     </Paper>
   );

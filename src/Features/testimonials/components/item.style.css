@@ -15,5 +15,13 @@
     font-weight: 400;
     font-family: "EB Garamond", serif;
     font-size: 40px;
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.workingTitle{
+    color: #ffa62b;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-top: 0;
+    font-weight: 500;
 }
