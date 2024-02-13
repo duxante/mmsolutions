@@ -49,7 +49,22 @@ const TestimonialsSlide = (props) => {
   ];
 
   return (
-    <Carousel>
+    <Carousel
+      animation="slide"
+      interval={5000}
+      duration={500}
+      navButtonsAlwaysVisible
+      navButtonsProps={{
+        style: {
+          backgroundColor: '#ffa62b',
+        },
+      }}
+      activeIndicatorIconButtonProps={{
+        style: {
+          color: '#ffa62b',
+        },
+      }}
+    >
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}

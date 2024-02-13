@@ -19,6 +19,14 @@ import kathy from './kathy.png';
 import mikeRuffalo from './mikeRuffalo.png';
 import josephineMcnammara from './josephineMcnammara.png';
 import janeSmith from './janeSmith.png';
+import blogpost1 from './blogpost1.png';
+import blogpost2 from './blogpost2.png';
+import blogpost3 from './blogpost3.png';
+import blogpost4 from './blogpost4.png';
+import blogpost5 from './blogpost5.png';
+import blogpost6 from './blogpost6.png';
+import blogpost7 from './blogpost7.png';
+import blogpost8 from './blogpost8.png';
 
 const MmsLogo = () => {
   return <img className="mmsLogo" src={mms_logo} alt="mms logo" />;
@@ -154,7 +162,47 @@ const MikeRuffalo = () => {
   );
 };
 
+const BlogPost1 = () => {
+  return <img className="blogPost" src={blogpost1} alt="blog post" />;
+};
+
+const BlogPost2 = () => {
+  return <img className="blogPost" src={blogpost2} alt="blog post" />;
+};
+
+const BlogPost3 = () => {
+  return <img className="blogPost" src={blogpost3} alt="blog post" />;
+};
+
+const BlogPost4 = () => {
+  return <img className="blogPost" src={blogpost4} alt="blog post" />;
+};
+
+const BlogPost5 = () => {
+  return <img className="blogPost" src={blogpost5} alt="blog post" />;
+};
+
+const BlogPost6 = () => {
+  return <img className="blogPost" src={blogpost6} alt="blog post" />;
+};
+
+const BlogPost7 = () => {
+  return <img className="blogPost" src={blogpost7} alt="blog post" />;
+};
+
+const BlogPost8 = () => {
+  return <img className="blogPost" src={blogpost8} alt="blog post" />;
+};
+
 export {
+  BlogPost1,
+  BlogPost2,
+  BlogPost3,
+  BlogPost4,
+  BlogPost5,
+  BlogPost6,
+  BlogPost7,
+  BlogPost8,
   Ideas,
   Experience,
   Clients,
