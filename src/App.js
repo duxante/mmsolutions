@@ -7,6 +7,7 @@ import ServiceOffering from './features/serviceOffering/serviceOffering';
 import Statistics from './features/statistics/statistics';
 import Testimonials from './features/testimonials/testimonials';
 import './App.css';
+import BlogPosts from './features/blog/blogPosts';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ServiceOffering />
       <Statistics />
       <Testimonials />
+      <BlogPosts />
       <Footer />
     </div>
   );

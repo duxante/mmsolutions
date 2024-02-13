@@ -1,12 +1,14 @@
-import '..style/post.style.css';
+import '../style/post.style.css';
 
 const Post = ({ img, date, title, description }) => {
   return (
-    <div>
+    <div className="postHolder">
       {img}
-      <p>{date}</p>
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div className="postMain">
+        <p>{date}</p>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </div>
   );
 };
