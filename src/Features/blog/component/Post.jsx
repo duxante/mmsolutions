@@ -1,11 +1,14 @@
 import '../style/post.style.css';
 
-const Post = ({ img, date, title, description }) => {
+const Post = ({ img, icon, date, title, description }) => {
   return (
     <div className="postHolder">
       {img}
       <div className="postMain">
-        <p>{date}</p>
+        <div className="date">
+          {icon}
+          <h6>{date}</h6>
+        </div>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>

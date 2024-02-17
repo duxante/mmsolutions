@@ -27,6 +27,7 @@ import blogpost5 from './blogpost5.png';
 import blogpost6 from './blogpost6.png';
 import blogpost7 from './blogpost7.png';
 import blogpost8 from './blogpost8.png';
+import calendarImage from './calendarImage.png';
 
 const MmsLogo = () => {
   return <img className="mmsLogo" src={mms_logo} alt="mms logo" />;
@@ -194,6 +195,10 @@ const BlogPost8 = () => {
   return <img className="blogPost" src={blogpost8} alt="blog post" />;
 };
 
+const CalendarImage = () => {
+  return <img className="calendarImage" src={calendarImage} alt="calendar" />;
+};
+
 export {
   BlogPost1,
   BlogPost2,
@@ -224,4 +229,5 @@ export {
   Kathy,
   JosephineMcnammara,
   JaneSmith,
+  CalendarImage,
 };
