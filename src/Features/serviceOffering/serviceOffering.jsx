@@ -10,7 +10,7 @@ const ServiceOffering = () => {
           <h4>SERVICES</h4>
           <h1>Service that Company Provides</h1>
           <p>
-            Fortify your business journey with our consultancy, delivering a
+            Fortify you business journey with our consultancy, delivering a
             disciplined range of services that will propel success. Elevate your
             enterprise through strategic and thorough action.
           </p>
