@@ -1,0 +1,57 @@
+.statisticsHolder{
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    background-image: url(../../assets/fountainPenForTehnicalStatistics.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.statisticsMain{
+    padding: 50px 0px;
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+.upperStatistics{
+    text-align: center;
+}
+
+.upperStatistics h4{
+    color: #ffa62b;
+    font-family: "Poppins", Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+.upperStatistics h1{
+    line-height: 1.5;
+    color: white;
+    font-weight: 400;
+    font-family: "EB Garamond", serif;
+    font-size: 70px;
+    margin: 0px auto;
+}
+
+.bottomStatistics{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overlayStatistics{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background: #111111;
+}
