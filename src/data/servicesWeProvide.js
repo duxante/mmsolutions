@@ -12,42 +12,42 @@ import {
 export const servicesData = [
   {
     img: <Analyze />,
-    title: 'Read this If You Want To Make Great Photographs',
-    description: 'Art',
+    title: 'Unlocking Insights: Your Business, Amplified Success',
+    description: 'Strategize',
   },
   {
     img: <Growth />,
-    title: 'Read this If You Want To Make Great Photographs',
-    description: 'Art',
+    title: 'Cultivate Success: Your Business, Flourishing Tomorrow',
+    description: 'Thrive',
   },
   {
     img: <InnovativeSolutions />,
-    title: 'Read this If You Want To Make Great Photographs',
-    description: 'Art',
+    title: 'Innovate Today, Transform Tomorrow: Your Solution',
+    description: 'Pioneering',
   },
   {
     img: <Manual />,
-    title: 'Read this If You Want To Make Great Photographs',
-    description: 'Art',
+    title: 'Revolutionize Methods: Your Business, Next Level',
+    description: 'Revolutionize',
   },
   {
     img: <OnlineMeetings />,
-    title: 'Read this If You Want To Make Great Photographs',
-    description: 'Art',
+    title: 'Connect, Collaborate, Excel: Your Virtual Success',
+    description: 'Virtualize',
   },
   {
     img: <Process />,
-    title: 'Read this If You Want To Make Great Photographs',
-    description: 'Art',
+    title: 'Efficiency Redefined: Your Business, Streamlined Triumph',
+    description: 'Optimize',
   },
   {
     img: <StrategicGuidance />,
-    title: 'Read this If You Want To Make Great Photographs',
-    description: 'Art',
+    title: 'Navigate Success: Your Business, Guided Strategically',
+    description: 'Guidance',
   },
   {
     img: <TransforamtiveInsights />,
-    title: 'Read this If You Want To Make Great Photographs',
-    description: 'Art',
+    title: 'Elevate Vision: Your Business, Transforming Perspectives',
+    description: 'Transformation',
   },
 ];

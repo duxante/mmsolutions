@@ -1,0 +1,58 @@
+.postHolder{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.postHolder img{
+    max-width: 400px;
+    width: 100%;
+}
+
+.date{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    max-width: 150px;
+    width: 100%;
+}
+
+.date h6{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4d4d4d;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.calendarImage{
+    max-width: 15px!important;
+    width: 100%!important;
+}
+
+.postMain{
+    color: #ffa62b;
+    font-family: "Poppins", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 25px;
+}
+
+.postMain p{
+    font-size: 17px;
+    font-family: "Poppins", Arial, sans-serif;    
+    line-height: 1.8;
+    font-weight: 500;
+    color: #4d4d4d;
+    max-width: 280px;
+    width: 100%;
+    /* margin-bottom: 3rem; */
+}
+
