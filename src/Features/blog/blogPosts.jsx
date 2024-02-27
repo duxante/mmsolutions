@@ -14,6 +14,7 @@ const BlogPosts = () => {
           {posts.map((onePost) => {
             return (
               <Post
+                key={onePost.id}
                 icon={onePost.icon}
                 img={onePost.img}
                 date={onePost.date}
