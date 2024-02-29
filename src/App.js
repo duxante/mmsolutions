@@ -1,5 +1,5 @@
 /* import HomeView from './features/home/homeView'; */
-import Navigation from './features/navigation/components/navigation';
+import Navigation from './features/navigation/components/Navigation';
 /* import Footer from '../src/features/footer/footer';
 import About from './features/about/components/about';
 import ServiceOffering from './features/serviceOffering/serviceOffering';
