@@ -19,6 +19,7 @@ const ServiceOffering = () => {
           {servicesData.map((service) => {
             return (
               <OneServiceOffering
+                key={service.id}
                 img={service.img}
                 title={service.title}
                 description={service.description}

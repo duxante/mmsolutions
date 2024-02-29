@@ -15,6 +15,7 @@ const Statistics = () => {
           {tehnicalStatistics.map((tehnicalStatistic) => {
             return (
               <OneStatistic
+                key={tehnicalStatistic.id}
                 img={tehnicalStatistic.img}
                 number={tehnicalStatistic.number}
                 description={tehnicalStatistic.description}

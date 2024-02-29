@@ -8,6 +8,7 @@ import Statistics from './features/statistics/statistics';
 import Testimonials from './features/testimonials/testimonials';
 import './App.css';
 import BlogPosts from './features/blog/blogPosts';
+import MadeBy from './features/madeBy/madeBy';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Testimonials />
       <BlogPosts />
       <Footer />
+      <MadeBy />
     </div>
   );
 }
