@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
-import './homeView.style.css';
 import { HomeViewImage } from '../../assets';
+import './homeView.style.css';
 
 const HomeView = () => {
   return (
