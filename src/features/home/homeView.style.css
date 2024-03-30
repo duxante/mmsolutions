@@ -17,6 +17,13 @@
     gap: 50px;
 }
 
+.elevate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
 .homeViewMain h2{
     font-size: 43px;
     margin-bottom: 0;
@@ -40,5 +47,27 @@
     margin-bottom: 0;
     margin-top: 0;
 }
+
+@media screen and (max-width:900px) {
+    .elevate{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .elevateDown{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .homeViewMain{
+        gap: 30px;
+    }
+    .homeViewMain h2{
+        font-size: 30px;
+    }
+
+}
+
+
 
 

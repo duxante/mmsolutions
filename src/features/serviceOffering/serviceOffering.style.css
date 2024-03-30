@@ -53,6 +53,34 @@
     justify-items: center;
 }
 
+@media screen and (max-width:900px) {
+    .upperText h1{
+        font-size: 43px;
+    }
+    .upperText p{
+        margin-top: 0;
+    }
+    .bottomImages{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .serviceOfferingMain p{
+        text-align: center;
+        line-height: 1.6;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .serviceOfferingMain p{
+        width: 90%;
+        margin: 0px auto;
+        padding: 15px 0px;
+    }
+}
+
 
 
 

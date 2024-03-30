@@ -63,6 +63,23 @@
     cursor: pointer;
 }
 
+@media screen and (max-width:1200px) {
+    .footerTogheter{
+        max-width: 300px;
+        width: 100%;
+    }
+    .footerMain{
+        justify-content: center;
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footerMain{
+        max-width: 95%;
+    }
+}
+
 
 
 
