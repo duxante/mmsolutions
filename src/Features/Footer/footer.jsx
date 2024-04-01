@@ -54,7 +54,7 @@ const Footer = () => {
           <p>→ News</p>
           <p>→ Contact</p>
         </div>
-        <div className="footerLeft footerTogheter">
+        <div className="footerRight footerTogheter">
           <h2>Have A Question?</h2>
           <div className="smallIcons">
             <MapIcon
