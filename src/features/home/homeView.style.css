@@ -65,7 +65,9 @@
     .homeViewMain h2{
         font-size: 30px;
     }
-
+    .nameAndImage{
+        gap: 30px
+    }
 }
 
 

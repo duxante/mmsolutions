@@ -103,6 +103,7 @@
     .smallIcons p{
         max-width: 300px;
         width: 100%;
+        text-align: left;
     }
     .footerMiddle{
     align-items: center;

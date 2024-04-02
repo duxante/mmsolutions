@@ -80,8 +80,9 @@
         padding: 15px 0px;
     }
 
-    .bottomImages{
-        grid-template-columns: repeat(1, 1fr);
+    .bottomImages{    
+    width: 100%;
+    gap: 5px;
     }
 }
 
