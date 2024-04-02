@@ -63,6 +63,60 @@
     cursor: pointer;
 }
 
+.footerRight{
+
+}
+
+@media screen and (max-width:1200px) {
+    .footerTogheter{
+        max-width: 300px;
+        width: 100%;
+    }
+    .footerMain{
+        justify-content: center;
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footerMain{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .footerMain{
+        flex-direction: column;
+    }
+    .footerLeft{
+        max-width: 600px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .footerRight{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px auto;
+    }
+    .smallIcons p{
+        max-width: 300px;
+        width: 100%;
+    }
+    .footerMiddle{
+    align-items: center;
+    margin: 0px auto;
+    }
+    .footerMiddle h2{
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+
 
 
 

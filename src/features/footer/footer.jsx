@@ -1,4 +1,10 @@
-import { Facebook, Twitter, YouTube } from '@mui/icons-material';
+import {
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Twitter,
+  YouTube,
+} from '@mui/icons-material';
 import MapIcon from '@mui/icons-material/Map';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import SendIcon from '@mui/icons-material/Send';
@@ -9,7 +15,7 @@ const Footer = () => {
   return (
     <div className="footerHolder">
       <div className="footerMain">
-        <div className="footerLeft">
+        <div className="footerLeft footerTogheter">
           <MmsLogo />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
@@ -18,24 +24,29 @@ const Footer = () => {
             voluptatem commodi iste.
           </p>
           <div className="socialMedia">
-            <Twitter
-              sx={{
-                color: 'orange',
-              }}
-            />
             <Facebook
               sx={{
                 color: 'orange',
               }}
             />
-            <YouTube
+            <Instagram
+              sx={{
+                color: 'orange',
+              }}
+            />
+            <Twitter
+              sx={{
+                color: 'orange',
+              }}
+            />
+            <LinkedIn
               sx={{
                 color: 'orange',
               }}
             />
           </div>
         </div>
-        <div className="footerMiddle">
+        <div className="footerMiddle footerTogheter">
           <h2>Category</h2>
           <p>→ Home</p>
           <p>→ About</p>
@@ -43,7 +54,7 @@ const Footer = () => {
           <p>→ News</p>
           <p>→ Contact</p>
         </div>
-        <div className="footerLeft">
+        <div className="footerRight footerTogheter">
           <h2>Have A Question?</h2>
           <div className="smallIcons">
             <MapIcon
@@ -59,7 +70,7 @@ const Footer = () => {
                 color: 'orange',
               }}
             />{' '}
-            <p>+381 985 352 41225</p>
+            <p>+381 65 352 4125</p>
           </div>
           <div className="smallIcons">
             <SendIcon
@@ -67,7 +78,7 @@ const Footer = () => {
                 color: 'orange',
               }}
             />{' '}
-            <p>mar.milicevic@gmail.com</p>
+            <p>marija.milicevic@mmsolutions.rs</p>
           </div>
         </div>
       </div>

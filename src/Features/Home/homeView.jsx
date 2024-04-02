@@ -5,7 +5,10 @@ const HomeView = () => {
   return (
     <div className="homeViewHolder">
       <div className="homeViewMain">
-        <h2>Elevate Your Success: Expert Counseling Insights.</h2>
+        <div className="elevate">
+          <h2 className="elevateUpper">Elevate Your Success: </h2>
+          <h2 className="elevateDown"> Expert Counseling Insights.</h2>
+        </div>
         <div className="nameAndImage">
           <h1>MARIJA MILIĆEVIĆ</h1>
           <HomeViewImage />

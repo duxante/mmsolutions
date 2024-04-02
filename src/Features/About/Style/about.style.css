@@ -66,10 +66,44 @@
     font-size: 17px;
     line-height: 1.8;
     font-weight: 400;
-    /* color: #4d4d4d; */
     color: black;
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width:1200px) {
+    .biggerImageAndLongerText {
+        justify-content: center;
+        gap: 2rem;
+    }
+    .justText{
+        max-width: 400px;
+    }
+    .justText h1{
+        font-size: 43px;
+    }
+}
 
+@media screen and (max-width:1000px) {
+    .biggerImageAndLongerText{
+        flex-direction: column;
+    }
+    .mMSolutionsButton{
+        margin: 0px auto;
+    }
+    .justText{
+        max-width: 900px;
+        width: 90%
+    }
+    .justText h1{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:900px) {
+    .imageAndShortText{
+        width: 90%;
+        padding: 4rem 0
+    }
+}

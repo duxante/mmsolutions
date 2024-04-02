@@ -55,3 +55,25 @@
     opacity: 0.9;
     background: #111111;
 }
+
+@media screen and (max-width:900px) {
+    .upperStatistics h1{
+        font-size: 43px;
+    }
+    .bottomStatistics{
+        max-width: 600px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: flex-start;
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .bottomStatistics{
+        margin: 0px auto;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
