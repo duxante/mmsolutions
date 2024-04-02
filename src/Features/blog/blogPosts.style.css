@@ -70,3 +70,11 @@
         max-width: 700px;
     }
 }
+
+@media screen and (max-width:600px) {
+    .postHolder img{
+        object-fit: cover;
+        object-position: 15% 85%;
+        max-height: 300px;
+    }
+}
