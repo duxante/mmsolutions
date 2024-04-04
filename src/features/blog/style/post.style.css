@@ -1,5 +1,4 @@
 .postHolder{
-    max-width: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -64,6 +63,21 @@
         max-width: 700px;
         width: 100%;
         margin-bottom: 30px;
+    }
+   .postHolder{
+        max-width: 800px;
+        width: 95%;
+    }
+    .postHolder img{
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .postHolder img{
+        object-fit: cover;
+        object-position: 15% 85%;
+        max-height: 300px;
     }
 }
 
