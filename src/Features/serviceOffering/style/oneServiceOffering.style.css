@@ -6,6 +6,7 @@
     align-items: center;
     position: relative;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .oneServiceHolder:hover > .overlay{
@@ -73,4 +74,5 @@
         font-size: 26px;
     }
 }
+
 
