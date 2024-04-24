@@ -5,24 +5,24 @@ export const tehnicalStatistics = [
     id: 1,
     img: <Readers />,
     number: '3000',
-    description: 'HAPPY READERS',
+    description: 'happy',
   },
   {
     id: 2,
     img: <Clients />,
     number: '150',
-    description: 'VALUED CLIENTS',
+    description: 'valued',
   },
   {
     id: 3,
     img: <Ideas />,
     number: '1200',
-    description: 'CREATED BRANDS & IDEAS',
+    description: 'created',
   },
   {
     id: 4,
     img: <Experience />,
     number: '25',
-    description: 'YEARS OF EXPERIENCE',
+    description: 'years',
   },
 ];

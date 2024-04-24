@@ -46,7 +46,7 @@ const VideoPlay = () => {
 const AboutImage = () => {
   return (
     <img
-      className="aboutImage"
+      className="aboutImage scalein animation-ease-in-out animation-duration-3000"
       src={aboutImage}
       alt="business woman at the airport"
     />
@@ -54,17 +54,29 @@ const AboutImage = () => {
 };
 
 const Analyze = () => {
-  return <img className="analyze" src={analyze} alt="sketch of analyze" />;
+  return (
+    <img
+      className="analyze flipright animation-ease-in-out animation-duration-2000"
+      src={analyze}
+      alt="sketch of analyze"
+    />
+  );
 };
 
 const Growth = () => {
-  return <img className="growth" src={growth} alt="up arrow" />;
+  return (
+    <img
+      className="growth flipright animation-ease-in-out animation-duration-2000"
+      src={growth}
+      alt="up arrow"
+    />
+  );
 };
 
 const InnovativeSolutions = () => {
   return (
     <img
-      className="innovativeSolutions"
+      className="innovativeSolutions flipright animation-ease-in-out animation-duration-3000"
       src={innovativeSolutions}
       alt="shoes in front of arrow"
     />
@@ -72,13 +84,19 @@ const InnovativeSolutions = () => {
 };
 
 const Manual = () => {
-  return <img className="manual" src={manual} alt="book" />;
+  return (
+    <img
+      className="manual flipright animation-ease-in-out animation-duration-2000"
+      src={manual}
+      alt="book"
+    />
+  );
 };
 
 const OnlineMeetings = () => {
   return (
     <img
-      className="onlineMeetings"
+      className="onlineMeetings flipright animation-ease-in-out animation-duration-3000"
       src={onlineMeetings}
       alt="laptop on a desk"
     />
@@ -86,13 +104,19 @@ const OnlineMeetings = () => {
 };
 
 const Process = () => {
-  return <img className="process" src={process} alt="puzzles" />;
+  return (
+    <img
+      className="process flipright animation-ease-in-out animation-duration-2000"
+      src={process}
+      alt="puzzles"
+    />
+  );
 };
 
 const StrategicGuidance = () => {
   return (
     <img
-      className="strategicGuidance"
+      className="strategicGuidance flipright animation-ease-in-out animation-duration-3000"
       src={strategicGuidance}
       alt="signs pointing left and right"
     />
@@ -102,7 +126,7 @@ const StrategicGuidance = () => {
 const TransforamtiveInsights = () => {
   return (
     <img
-      className="transformative"
+      className="transformative flipright animation-ease-in-out animation-duration-2000"
       src={transformativeInsights}
       alt="book in puzzels"
     />

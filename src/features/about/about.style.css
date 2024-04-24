@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     font-family: 'Playfair Display';
+    opacity: 1;
 }
 
 .aboutMain{
@@ -121,4 +122,8 @@
     .justText{
         text-align: center;
     }
+}
+
+.visibleNone{
+    opacity: 0;
 }

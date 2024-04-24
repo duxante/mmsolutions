@@ -1,21 +1,24 @@
 import OneServiceOffering from './components/oneServiceOffering';
 import { servicesData } from '../../data/servicesWeProvide';
 import './serviceOffering.style.css';
+import useIntersectionObserver from '../../utils/useIntersectionObserver';
+import { useTranslation } from 'react-i18next';
 
 const ServiceOffering = () => {
+  const { t } = useTranslation();
+  const [ref, isVisible] = useIntersectionObserver({
+    rootMargin: '0px',
+    threshold: 0.3,
+  });
   return (
-    <div className="serviceOfferingHolder">
+    <div ref={ref} className="serviceOfferingHolder">
       <div className="serviceOfferingMain">
         <div className="upperText">
-          <h4>SERVICES</h4>
-          <h1>Service that Company Provides</h1>
-          <p>
-            Fortify your business journey with our consultancy, delivering a
-            disciplined range of services that will propel success. Elevate your
-            enterprise through strategic and thorough action.
-          </p>
+          <h4>{t('servicesTitle')}</h4>
+          <h1>{t('companyProvides')}</h1>
+          <p>{t('serviceDescription')}</p>
         </div>
-        <div className="bottomImages">
+        <div className={isVisible && 'bottomImages'}>
           {servicesData.map((service) => {
             return (
               <OneServiceOffering

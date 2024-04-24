@@ -14,37 +14,32 @@ const TestimonialsSlide = (props) => {
     {
       img: <JaneSmith />,
       name: 'Jane Smith',
-      workingTitle: 'OWNER',
-      description:
-        '"Working with this consultant company felt like having a trusted ally in our business journey. Their down-to-earth genuine commitment to our success made the entire process not just professional but also a personal and enjoyable."',
+      workingTitle: 'owner',
+      description: 'jane',
     },
     {
       img: <MikeRuffalo />,
       name: 'Mark Ruffalo',
-      workingTitle: 'PROCESS MANAGER',
-      description:
-        '"Their team not only brought expert insights but also a refreshing dose of enthusiasm. It is a partnership built on trust, delivering real, tangible results. We couldnt be happier with the journey and the outcomes."',
+      workingTitle: 'processManager',
+      description: 'mark',
     },
     {
       img: <TomHiddleStone />,
       name: 'Tom Hiddlestone',
-      workingTitle: 'MARKETING MANAGER',
-      description:
-        '"Partnering with this consultancy was our best decision ever. Their expertise, coupled with personalized guidance, has transformed our business trajectory. Grateful for the positive impact and continual support."',
+      workingTitle: 'marketingManager',
+      description: 'tom',
     },
     {
       img: <JosephineMcnammara />,
       name: 'Josephine McNammara',
-      workingTitle: 'CEO & FOUNDER',
-      description:
-        '"Selecting this consultancy ranks as our best business decision. Their profound expertise, coupled with personalized guidance, has transformed our approach and elevated our outcomes. We value the genuine partnership built on trust."',
+      workingTitle: 'ceo',
+      description: 'josephine',
     },
     {
       img: <Kathy />,
       name: 'Kathy Pierce',
-      workingTitle: 'OWNER',
-      description:
-        '"Engaging with this consultancy has been a transformative journey. The personalized attention that made us feel genuinely heard, it is more than a consultancy; it is a force propelling our success."',
+      workingTitle: 'owner',
+      description: 'kathy',
     },
   ];
 
