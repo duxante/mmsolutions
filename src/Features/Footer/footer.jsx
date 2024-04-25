@@ -9,8 +9,8 @@ import { useTranslation } from 'react-i18next';
 import MapIcon from '@mui/icons-material/Map';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import SendIcon from '@mui/icons-material/Send';
-import './footer.style.css';
 import { MmsLogo } from '../../assets';
+import './footer.style.css';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -19,12 +19,7 @@ const Footer = () => {
       <div className="footerMain">
         <div className="footerLeft footerTogheter">
           <MmsLogo />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-            ipsum dolorem, sunt consequatur debitis, adipisci quos sint soluta
-            qui et consequuntur reprehenderit dolores harum vitae eos totam
-            voluptatem commodi iste.
-          </p>
+          <p>{t('shortAboutCompany')}</p>
           <div className="socialMedia">
             <Facebook
               sx={{

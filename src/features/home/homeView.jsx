@@ -10,7 +10,7 @@ const HomeView = () => {
   };
 
   return (
-    <div className="homeViewHolder flipright animation-duration-1000">
+    <div className="homeViewHolder fadeinright animation-duration-1000">
       <div className="homeViewMain">
         <div className="elevate">
           <h2 className="elevateUpper">{t('elevate')}</h2>

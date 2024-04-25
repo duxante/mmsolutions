@@ -42,7 +42,7 @@ const Navigation = () => {
   };
   return (
     <AppBar
-      className="scalein animation-ease-in-out animation-duration-3000 shadow-3"
+      className="fadeinleft animation-duration-1000 shadow-3"
       sx={{ position: 'sticky', backgroundColor: '#ffa62b' }}
     >
       <Container maxWidth="x1">
