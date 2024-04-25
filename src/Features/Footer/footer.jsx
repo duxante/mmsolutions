@@ -5,6 +5,7 @@ import {
   Twitter,
   YouTube,
 } from '@mui/icons-material';
+import { useTranslation } from 'react-i18next';
 import MapIcon from '@mui/icons-material/Map';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import SendIcon from '@mui/icons-material/Send';
@@ -12,6 +13,7 @@ import './footer.style.css';
 import { MmsLogo } from '../../assets';
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="footerHolder">
       <div className="footerMain">
@@ -47,22 +49,22 @@ const Footer = () => {
           </div>
         </div>
         <div className="footerMiddle footerTogheter">
-          <h2>Category</h2>
-          <p>→ Home</p>
-          <p>→ About</p>
-          <p>→ Services</p>
-          <p>→ News</p>
-          <p>→ Contact</p>
+          <h2>{t('category')}</h2>
+          <p>→ {t('home')}</p>
+          <p>→ {t('about')}</p>
+          <p>→ {t('services')}</p>
+          <p>→ {t('news')}</p>
+          <p>→ {t('contact')}</p>
         </div>
         <div className="footerRight footerTogheter">
-          <h2>Have A Question?</h2>
+          <h2>{t('question')}</h2>
           <div className="smallIcons">
             <MapIcon
               sx={{
                 color: 'orange',
               }}
             />{' '}
-            <p>Beograd, Srbija</p>
+            <p>{t('belgrade')}</p>
           </div>
           <div className="smallIcons">
             <LocalPhoneIcon

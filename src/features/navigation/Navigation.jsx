@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MmsLogo } from '../../../assets';
+import { MmsLogo } from '../../assets';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
@@ -16,12 +16,15 @@ import {
   LinkedIn,
   Twitter,
 } from '@mui/icons-material';
-
-const pages = ['Home', 'About', 'Services', 'News', 'Contact'];
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
+  const { t } = useTranslation();
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const pages = [t('home'), t('about'), t('services'), t('news'), t('contact')];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -38,7 +41,10 @@ const Navigation = () => {
     setAnchorElUser(null);
   };
   return (
-    <AppBar sx={{ position: 'sticky', backgroundColor: '#ffa62b' }}>
+    <AppBar
+      className="scalein animation-ease-in-out animation-duration-3000 shadow-3"
+      sx={{ position: 'sticky', backgroundColor: '#ffa62b' }}
+    >
       <Container maxWidth="x1">
         <Toolbar disableGutters>
           <Typography

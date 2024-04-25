@@ -1,7 +1,9 @@
 import { Paper } from '@mui/material';
 import './item.style.css';
+import { useTranslation } from 'react-i18next';
 
 const Item = (props) => {
+  const { t } = useTranslation();
   return (
     <Paper
       sx={{
@@ -16,8 +18,8 @@ const Item = (props) => {
     >
       {props.item.img}
       <h2 className="nameBelowImage">{props.item.name}</h2>
-      <p className="workingTitle">{props.item.workingTitle}</p>
-      <p className="textBelowImage">{props.item.description}</p>
+      <p className="workingTitle">{t(props.item.workingTitle)}</p>
+      <p className="textBelowImage">{t(props.item.description)}</p>
     </Paper>
   );
 };
