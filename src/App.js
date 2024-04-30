@@ -8,19 +8,34 @@ import Testimonials from './features/testimonials/testimonials';
 import BlogPosts from './features/blog/blogPosts';
 import MadeBy from './features/madeBy/madeBy';
 import './App.css';
+import PostById from './features/blog/component/postById';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
+const Pages = () => {
   return (
-    <div className="App">
-      <Navigation />
+    <>
       <HomeView />
       <About />
       <ServiceOffering />
       <Statistics />
       <Testimonials />
       <BlogPosts />
-      <Footer />
-      <MadeBy />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/" element={<Pages />} />
+          <Route path="/:postId" element={<PostById />} />
+        </Routes>
+        <Footer />
+        <MadeBy />
+      </BrowserRouter>
     </div>
   );
 }

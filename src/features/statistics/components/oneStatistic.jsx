@@ -1,13 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import '../style/oneStatistic.style.css';
 import { useEffect } from 'react';
+import { increaseNumberAnimation } from '../../../utils/increaseNumberAnimation';
 
-const OneStatistic = ({
-  increaseNumberAnimation,
-  img,
-  number,
-  description,
-}) => {
+const OneStatistic = ({ img, number, description }) => {
   const { t } = useTranslation();
   useEffect(() => {
     increaseNumberAnimation(`stats-${number}`, number);
