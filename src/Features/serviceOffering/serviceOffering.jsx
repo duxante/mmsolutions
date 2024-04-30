@@ -1,8 +1,8 @@
 import OneServiceOffering from './components/oneServiceOffering';
 import { servicesData } from '../../data/servicesWeProvide';
-import './serviceOffering.style.css';
 import useIntersectionObserver from '../../utils/useIntersectionObserver';
 import { useTranslation } from 'react-i18next';
+import './serviceOffering.style.css';
 
 const ServiceOffering = () => {
   const { t } = useTranslation();
@@ -18,18 +18,20 @@ const ServiceOffering = () => {
           <h1>{t('companyProvides')}</h1>
           <p>{t('serviceDescription')}</p>
         </div>
-        <div className={isVisible && 'bottomImages'}>
-          {servicesData.map((service) => {
-            return (
-              <OneServiceOffering
-                key={service.id}
-                img={service.img}
-                title={service.title}
-                description={service.description}
-              />
-            );
-          })}
-        </div>
+        {isVisible && (
+          <div className="bottomImages">
+            {servicesData.map((service) => {
+              return (
+                <OneServiceOffering
+                  key={service.id}
+                  img={service.img}
+                  title={service.title}
+                  description={service.description}
+                />
+              );
+            })}
+          </div>
+        )}
       </div>
     </div>
   );

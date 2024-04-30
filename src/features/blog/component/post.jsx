@@ -2,7 +2,7 @@ import '../style/post.style.css';
 
 const Post = ({ img, icon, date, title, description }) => {
   return (
-    <div className="postHolder">
+    <div className="postHolder flipright animation-duration-1000">
       {img}
       <div className="postMain">
         <div className="date">
