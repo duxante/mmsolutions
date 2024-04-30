@@ -22,6 +22,7 @@ const BlogPosts = () => {
             {posts.map((onePost) => {
               return (
                 <Post
+                  id={onePost.id}
                   key={onePost.id}
                   icon={onePost.icon}
                   img={onePost.img}

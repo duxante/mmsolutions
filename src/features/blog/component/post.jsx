@@ -1,8 +1,16 @@
+import { useNavigate } from 'react-router-dom';
 import '../style/post.style.css';
 
-const Post = ({ img, icon, date, title, description }) => {
+const Post = ({ id, img, icon, date, title, description }) => {
+  const navigate = useNavigate();
+  const handleNavigateToPostId = (postId) => {
+    navigate(`${postId}`);
+  };
   return (
-    <div className="postHolder flipright animation-duration-1000">
+    <div
+      onClick={() => handleNavigateToPostId(id)}
+      className="postHolder flipright animation-duration-1000"
+    >
       {img}
       <div className="postMain">
         <div className="date">
