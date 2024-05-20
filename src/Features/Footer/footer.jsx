@@ -15,7 +15,7 @@ import './footer.style.css';
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <div className="footerHolder">
+    <div id="contact" className="footerHolder">
       <div className="footerMain">
         <div className="footerLeft footerTogheter">
           <MmsLogo />

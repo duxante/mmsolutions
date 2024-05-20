@@ -28,6 +28,8 @@ import blogpost6 from './blogpost6.png';
 import blogpost7 from './blogpost7.png';
 import blogpost8 from './blogpost8.png';
 import calendarImage from './calendarImage.png';
+import englishFlag from './englishFlag.png';
+import serbianFlag from './serbianFlag.png';
 
 const MmsLogo = () => {
   return <img className="mmsLogo" src={mms_logo} alt="mms logo" />;
@@ -199,6 +201,14 @@ const CalendarImage = () => {
   return <img className="calendarImage" src={calendarImage} alt="calendar" />;
 };
 
+const EnglishFlag = () => {
+  return <img className="englishFlag" src={englishFlag} alt="english flag" />;
+};
+
+const SerbianFlag = () => {
+  return <img className="serbianFlag" src={serbianFlag} alt="serbian flag" />;
+};
+
 export {
   BlogPost1,
   BlogPost2,
@@ -230,4 +240,6 @@ export {
   JosephineMcnammara,
   JaneSmith,
   CalendarImage,
+  SerbianFlag,
+  EnglishFlag,
 };

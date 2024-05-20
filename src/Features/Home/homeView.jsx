@@ -3,14 +3,13 @@ import { HomeViewImage } from '../../assets';
 import './homeView.style.css';
 
 const HomeView = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  const { t } = useTranslation();
 
   return (
-    <div className="homeViewHolder fadeinright animation-duration-1000">
+    <div
+      id="home"
+      className="homeViewHolder fadeinright animation-duration-1000"
+    >
       <div className="homeViewMain">
         <div className="elevate">
           <h2 className="elevateUpper">{t('elevate')}</h2>
@@ -18,8 +17,6 @@ const HomeView = () => {
         </div>
         <div className="nameAndImage">
           <h1>{t('consultantName')}</h1>
-          <button onClick={() => changeLanguage('sr')}>SR</button>
-          <button onClick={() => changeLanguage('en')}>EN</button>
           <HomeViewImage />
         </div>
       </div>
