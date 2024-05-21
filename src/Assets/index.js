@@ -201,12 +201,26 @@ const CalendarImage = () => {
   return <img className="calendarImage" src={calendarImage} alt="calendar" />;
 };
 
-const EnglishFlag = () => {
-  return <img className="englishFlag" src={englishFlag} alt="english flag" />;
+const EnglishFlag = ({ handleChangeLanguage, isSelected }) => {
+  return (
+    <img
+      onClick={handleChangeLanguage}
+      className={isSelected ? 'englishFlag selected' : 'englishFlag'}
+      src={englishFlag}
+      alt="english flag"
+    />
+  );
 };
 
-const SerbianFlag = () => {
-  return <img className="serbianFlag" src={serbianFlag} alt="serbian flag" />;
+const SerbianFlag = ({ handleChangeLanguage, isSelected }) => {
+  return (
+    <img
+      onClick={handleChangeLanguage}
+      className={isSelected ? 'serbianFlag selected' : 'serbianFlag'}
+      src={serbianFlag}
+      alt="serbian flag"
+    />
+  );
 };
 
 export {

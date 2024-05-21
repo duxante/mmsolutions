@@ -179,8 +179,14 @@ const Navigation = () => {
             <Twitter sx={{ '&:hover': { cursor: 'pointer' } }} />
             <LinkedIn sx={{ '&:hover': { cursor: 'pointer' } }} />
             <div className="languagesAndFlags">
-              <SerbianFlag onClick={() => changeLanguage('sr')} />
-              <EnglishFlag onClick={() => changeLanguage('en')} />
+              <SerbianFlag
+                isSelected={i18n.language === 'sr'}
+                handleChangeLanguage={() => changeLanguage('sr')}
+              />
+              <EnglishFlag
+                isSelected={i18n.language === 'en'}
+                handleChangeLanguage={() => changeLanguage('en')}
+              />
             </div>
           </Box>
         </Toolbar>

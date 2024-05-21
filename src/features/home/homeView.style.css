@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     background-color: #ffa62b;
-    font-family: 'Playfair Display';
 }
 
 .homeViewMain{
@@ -53,6 +52,7 @@
 @media screen and (max-width:900px) {
     .elevate{
         flex-direction: column;
+        text-align: center;
         gap: 0px;
     }
     .elevateDown{
