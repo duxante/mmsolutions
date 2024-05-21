@@ -12,7 +12,7 @@ const About = () => {
   });
 
   return (
-    <div ref={ref} className="aboutHolder">
+    <div id="about" ref={ref} className="aboutHolder">
       <div className="aboutMain">
         {isVisible && (
           <div className="imageAndShortText">

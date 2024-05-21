@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MmsLogo } from '../../assets';
+import { EnglishFlag, MmsLogo, SerbianFlag } from '../../assets';
 import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
@@ -17,14 +17,25 @@ import {
   Twitter,
 } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
+import './navigation.style.css';
 
 const Navigation = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const pages = [t('home'), t('about'), t('services'), t('news'), t('contact')];
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const pages = [
+    { name: t('home'), id: 'home' },
+    { name: t('about'), id: 'about' },
+    { name: t('services'), id: 'services' },
+    { name: t('news'), id: 'news' },
+    { name: t('contact'), id: 'contact' },
+  ];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -39,6 +50,15 @@ const Navigation = () => {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const handleScroll = (page_id) => {
+    const element = document.getElementById(page_id);
+    element.scrollIntoView({
+      top: 0,
+      behavior: 'smooth',
+    });
+    handleCloseNavMenu();
   };
   return (
     <AppBar
@@ -95,8 +115,8 @@ const Navigation = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.id} onClick={() => handleScroll(page.id)}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -128,8 +148,8 @@ const Navigation = () => {
           >
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.id}
+                onClick={() => handleScroll(page.id)}
                 sx={{
                   my: 2,
                   color: 'black',
@@ -138,7 +158,7 @@ const Navigation = () => {
                   fontSize: '16px',
                 }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>
@@ -147,9 +167,10 @@ const Navigation = () => {
               flexGrow: 0,
               display: 'flex',
               justifyContent: 'spaceBetween',
+              alignItems: `center`,
               gap: '25px',
               color: 'black',
-              maxWidth: '200px',
+              maxWidth: '280px',
               width: '100%',
             }}
           >
@@ -157,6 +178,16 @@ const Navigation = () => {
             <Instagram sx={{ '&:hover': { cursor: 'pointer' } }} />
             <Twitter sx={{ '&:hover': { cursor: 'pointer' } }} />
             <LinkedIn sx={{ '&:hover': { cursor: 'pointer' } }} />
+            <div className="languagesAndFlags">
+              <SerbianFlag
+                isSelected={i18n.language === 'sr'}
+                handleChangeLanguage={() => changeLanguage('sr')}
+              />
+              <EnglishFlag
+                isSelected={i18n.language === 'en'}
+                handleChangeLanguage={() => changeLanguage('en')}
+              />
+            </div>
           </Box>
         </Toolbar>
       </Container>

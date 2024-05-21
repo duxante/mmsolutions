@@ -27,7 +27,6 @@
     font-size: 13px;
     font-weight: 600;
     color: #4d4d4d;
-    font-family: "Poppins", Arial, sans-serif;
 }
 
 .calendarImage{
@@ -37,7 +36,6 @@
 
 .postMain{
     color: #ffa62b;
-    font-family: "Poppins", Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -45,8 +43,7 @@
 }
 
 .postMain p{
-    font-size: 17px;
-    font-family: "Poppins", Arial, sans-serif;    
+    font-size: 17px; 
     line-height: 1.8;
     font-weight: 500;
     color: #4d4d4d;

@@ -11,7 +11,7 @@ const BlogPosts = () => {
   });
   const { t } = useTranslation();
   return (
-    <div ref={ref} className="blogPostsHolder">
+    <div id="news" ref={ref} className="blogPostsHolder">
       <div className="blogPostsMain">
         <div className="blogPostsUpper">
           <h4>{t('news')}</h4>

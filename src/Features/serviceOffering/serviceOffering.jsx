@@ -11,7 +11,7 @@ const ServiceOffering = () => {
     threshold: 0.3,
   });
   return (
-    <div ref={ref} className="serviceOfferingHolder">
+    <div id="services" ref={ref} className="serviceOfferingHolder">
       <div className="serviceOfferingMain">
         <div className="upperText">
           <h4>{t('servicesTitle')}</h4>

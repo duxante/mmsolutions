@@ -3,7 +3,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    font-family: 'Playfair Display';
     background-color: white;
 }
 
@@ -23,7 +22,6 @@
 
 .upperText h4{
     color: #ffa62b;
-    font-family: "Poppins", Arial, sans-serif;
     margin-bottom: 0;
     text-transform: uppercase;
 }
@@ -32,14 +30,12 @@
     line-height: 1.5;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 400;
-    font-family: "EB Garamond", serif;
     font-size: 70px;
     margin: 0px auto;
 }
 
 .upperText p{
-    font-size: 17px;
-    font-family: "Poppins", Arial, sans-serif;    
+    font-size: 17px;   
     line-height: 1.8;
     font-weight: 500;
     color: #4d4d4d;

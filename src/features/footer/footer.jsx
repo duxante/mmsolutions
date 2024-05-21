@@ -14,8 +14,17 @@ import './footer.style.css';
 
 const Footer = () => {
   const { t } = useTranslation();
+
+  const handleScroll = (page_id) => {
+    const element = document.getElementById(page_id);
+    element.scrollIntoView({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
-    <div className="footerHolder">
+    <div id="contact" className="footerHolder">
       <div className="footerMain">
         <div className="footerLeft footerTogheter">
           <MmsLogo />
@@ -45,11 +54,11 @@ const Footer = () => {
         </div>
         <div className="footerMiddle footerTogheter">
           <h2>{t('category')}</h2>
-          <p>→ {t('home')}</p>
-          <p>→ {t('about')}</p>
-          <p>→ {t('services')}</p>
-          <p>→ {t('news')}</p>
-          <p>→ {t('contact')}</p>
+          <p onClick={() => handleScroll('home')}>→ {t('home')}</p>
+          <p onClick={() => handleScroll('about')}>→ {t('about')}</p>
+          <p onClick={() => handleScroll('services')}>→ {t('services')}</p>
+          <p onClick={() => handleScroll('news')}>→ {t('news')}</p>
+          <p onClick={() => handleScroll('contact')}>→ {t('contact')}</p>
         </div>
         <div className="footerRight footerTogheter">
           <h2>{t('question')}</h2>
