@@ -10,6 +10,15 @@ const AboutBody = () => {
     rootMargin: '0px',
     threshold: 0.3,
   });
+
+  const handleScroll = () => {
+    const element = document.getElementById('services');
+    element.scrollIntoView({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div ref={ref} className={isVisible && 'biggerImageAndLongerText'}>
       {isVisible && (
@@ -27,6 +36,7 @@ const AboutBody = () => {
               {t('explore')}
             </p>
             <MainButton
+              handleAction={handleScroll}
               customClass={
                 'fadeinright animation-delay-1000 animation-ease-in-out animation-duration-3000'
               }

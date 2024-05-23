@@ -1,8 +1,13 @@
 import './mainButton.style.css';
 
-const MainButton = ({ buttonText, customClass }) => {
+const MainButton = ({ buttonText, customClass, handleAction }) => {
   return (
-    <button className={`mMSolutionsButton ${customClass}`}>{buttonText}</button>
+    <button
+      onClick={handleAction}
+      className={`mMSolutionsButton ${customClass}`}
+    >
+      {buttonText}
+    </button>
   );
 };
 

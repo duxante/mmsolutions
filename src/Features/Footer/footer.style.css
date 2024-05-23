@@ -51,6 +51,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .smallIcons{
@@ -61,10 +62,6 @@
     align-items: center;
     gap: 15px;
     cursor: pointer;
-}
-
-.footerRight{
-
 }
 
 @media screen and (max-width:1200px) {
