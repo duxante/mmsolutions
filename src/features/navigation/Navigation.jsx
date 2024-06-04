@@ -17,10 +17,14 @@ import {
   Twitter,
 } from '@mui/icons-material';
 import { useTranslation } from 'react-i18next';
+import { useLocation, useNavigate } from 'react-router-dom';
 import './navigation.style.css';
 
 const Navigation = () => {
   const { t, i18n } = useTranslation();
+  const location = useLocation();
+  const { pathname } = location;
+  const navigate = useNavigate();
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -53,6 +57,10 @@ const Navigation = () => {
   };
 
   const handleScroll = (page_id) => {
+    if (pathname.length > 1) {
+      navigate('/');
+      return;
+    }
     const element = document.getElementById(page_id);
     element.scrollIntoView({
       top: 0,
