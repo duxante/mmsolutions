@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import '../style/postById.style.css';
 import { useEffect, useState } from 'react';
 import { getItemById } from '../../../data/blogPosts';
+import '../style/postById.style.css';
 
 const PostById = () => {
   const { postId } = useParams();
